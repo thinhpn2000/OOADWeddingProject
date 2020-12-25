@@ -40,7 +40,6 @@ public class AuthenAccountRepository {
 			if(result.equals('"' + "Login Failed" + '"'))
 				return null;
 			else {
-				System.out.println(result);
 				UserDTO user = convertJSONToUserDto(result);
 				return user;
 			}
